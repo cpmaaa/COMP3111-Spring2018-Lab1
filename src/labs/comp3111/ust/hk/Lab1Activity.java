@@ -13,5 +13,16 @@ public class Lab1Activity {
 		}
 
 		System.out.println(String.format("Sum of the numbers is %d", sum));
+		
+		int maxValue = 0, minValue = arr[0];
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i] > maxValue)
+				maxValue = arr[i];
+			if(arr[i] < minValue)
+				minValue = arr[i];
+		}
+		
+		System.out.print(String.format("Min = %d;", minValue));
+		System.out.println(String.format(" Max = %d", maxValue));
 	}
 }
